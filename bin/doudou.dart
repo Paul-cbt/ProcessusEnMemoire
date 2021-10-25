@@ -9,6 +9,7 @@ void main(List<String> arguments) {
       case Status.dormir:
         if (random.nextInt(10) == 1) {
           //une chance sur dix
+          //one in ten chance
           return Status.reveil;
         } else {
           return Status.dormir;
