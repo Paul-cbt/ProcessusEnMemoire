@@ -116,7 +116,7 @@ void main(List<String> arguments) {
         '-------------------------------------------------------------------------');
 
     //give the final result, so we know where we have the most chances to find the hamster.
-    print('Result final : ${endResult.toString()}');
+    print('final Result : ${endResult.toString()}');
   }
 
   start();
@@ -148,10 +148,10 @@ class Result {
       return (nombre * 100);
     }
 
-    return 'copeaux : $numberOfsleep\neatingPlace : $numberOfeatingPlace\nla roue : $numberOfRoue' +
-        '\nprobabilité : copeaux    : ${arrondir(probasleep)}  %' +
-        '\n              eatingPlace  : ${arrondir(probaeating)}  %' +
-        '\n              roue       : ${arrondir(probaExercice)}  %';
+    return 'sleeping place : $numberOfsleep\neatingPlace : $numberOfeatingPlace\nexercising place: $numberOfRoue' +
+        '\nprobability : sleeping place    : ${arrondir(probasleep)}  %' +
+        '\n              eating Place  : ${arrondir(probaeating)}  %' +
+        '\n              exercising place       : ${arrondir(probaExercice)}  %';
   }
 
   Result add(Result currentResult) {
