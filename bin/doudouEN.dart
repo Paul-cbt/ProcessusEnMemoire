@@ -64,7 +64,11 @@ void main(List<String> arguments) {
         case Status.eating:
           numberOfeatingPlace++;
           //add one occurrence to the eating place
+          break;
 
+        case Status.wakingUp:
+          numberOfsleep++;
+          //waking up, he is still at his sleeping place
           break;
         default:
       }

@@ -59,6 +59,10 @@ void main(List<String> arguments) {
         case Status.manger:
           numberOfMangeoire++;
           break;
+        case Status.reveil:
+          numberOfDormir++;
+          //waking up, he is still at his sleeping place
+          break;
         default:
       }
       currentStatus = getNextStatus(currentStatus);
