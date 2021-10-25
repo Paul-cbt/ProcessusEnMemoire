@@ -1,6 +1,6 @@
 import 'dart:math';
 
-int nombreExecution = 1000000;
+int numberOfRuns = 1000000;
 void main(List<String> arguments) {
   Status getNextStatus(Status currentStatus) {
     var random = Random();
@@ -50,7 +50,7 @@ void main(List<String> arguments) {
     var numberOfRoue = 0;
     //no wakingUp place because it doesn't count as a location in the math exercice
 
-    for (var i = 0; i < nombreExecution; i++) {
+    for (var i = 0; i < numberOfRuns; i++) {
       switch (currentStatus) {
         case Status.sleep:
           numberOfsleep++;
@@ -116,7 +116,8 @@ void main(List<String> arguments) {
         '-------------------------------------------------------------------------');
 
     //give the final result, so we know where we have the most chances to find the hamster.
-    print('final Result : ${endResult.toString()}');
+    print(
+        'final Result with ${4 * numberOfRuns} runs : ${endResult.toString()}');
   }
 
   start();

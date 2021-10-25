@@ -101,7 +101,8 @@ void main(List<String> arguments) {
     print(
         '-------------------------------------------------------------------------');
 
-    print('Resultat final : ${endResult.toString()}');
+    print(
+        'Resultat final avec ${4 * nombreExecution} de simulations: ${endResult.toString()}');
   }
 
   start();
