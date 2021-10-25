@@ -1,7 +1,5 @@
 import 'dart:math';
 
-import 'package:doudou/doudou.dart' as doudou;
-
 int nombreExecution = 1000000;
 void main(List<String> arguments) {
   Status getNextStatus(Status currentStatus) {
