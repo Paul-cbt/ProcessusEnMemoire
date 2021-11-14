@@ -1,6 +1,6 @@
 import 'dart:math';
 
-int nombreExecution = 1000000;
+int nombreExecution = 50000000;
 void main(List<String> arguments) {
   Status getNextStatus(Status currentStatus) {
     var random = Random();
@@ -60,7 +60,7 @@ void main(List<String> arguments) {
           numberOfMangeoire++;
           break;
         case Status.reveil:
-          numberOfDormir++;
+          // numberOfDormir++;
           //waking up, he is still at his sleeping place
           break;
         default:

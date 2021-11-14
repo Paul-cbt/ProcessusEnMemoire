@@ -67,8 +67,8 @@ void main(List<String> arguments) {
           break;
 
         case Status.wakingUp:
-          numberOfsleep++;
-          //waking up, he is still at his sleeping place
+
+          //waking up, not counting as step
           break;
         default:
       }
